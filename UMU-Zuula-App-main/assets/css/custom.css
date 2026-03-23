@@ -1,0 +1,346 @@
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: smaller;
+    font-style: italic;
+}
+
+.truncate-1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.truncate-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.truncate-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.modal-dialog.large {
+    width: 80% !important;
+    max-width: unset;
+}
+
+.modal-dialog.mid-large {
+    width: 50% !important;
+    max-width: unset;
+}
+
+@media (max-width:900px) {
+    .modal-dialog.large {
+        width: 100% !important;
+        max-width: unset;
+    }
+    .modal-dialog.mid-large {
+        width: 100% !important;
+        max-width: unset;
+    }
+    .modal-dialog {
+        margin: unset !important;
+    }
+}
+
+#viewer_modal .btn-close {
+    position: absolute;
+    z-index: 999999;
+    /*right: -4.5em;*/
+    background: unset;
+    color: white;
+    border: unset;
+    font-size: 27px;
+    top: 0;
+}
+
+#viewer_modal .modal-dialog {
+    width: 80%;
+    max-width: unset;
+    height: calc(90%);
+    max-height: unset;
+}
+
+#viewer_modal .modal-content {
+    background: black;
+    border: unset;
+    height: calc(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#viewer_modal img,
+#viewer_modal video {
+    max-height: calc(100%);
+    max-width: calc(100%);
+}
+
+table.dataTable th,
+table.dataTable td {
+    padding: 5px !important;
+}
+
+#preloader {
+    position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9999;
+      overflow: hidden;
+      background: #6161614a;
+      width: calc(100%);
+      height: calc(100%);
+      align-items: center;
+      justify-content: center;
+      display: flex;
+  }
+   #preloader .loader-holder{
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin: auto; 
+  }
+  
+   #preloader .loader-holder div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 5px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #0088ff transparent transparent transparent;
+  }
+   #preloader .loader-holder div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+   #preloader .loader-holder div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+   #preloader .loader-holder div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .page-content img, .page-content video {
+    max-width: 100% !important;
+    object-fit: scale-down;
+    object-position: center center;
+}
+
+.titleTxt span{
+    color: #899bbd;
+    font-size: 14px;
+    font-weight: 400;
+}
+.titleSubTxt{
+    color: #899bbd;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.table-responsive{
+    overflow-x: unset;
+}
+
+/* ============================================
+   UMU-ZUULA PREMIUM COLOR SCHEME
+   Primary:  #9B0F06 (Deep Crimson)
+   Secondary: #134E8E (Royal Navy)
+   Accent:   #ECE7D1 (Warm Ivory)
+   ============================================ */
+
+:root {
+  --zuula-primary: #9B0F06;
+  --zuula-secondary: #134E8E;
+  --zuula-accent: #ECE7D1;
+  --zuula-dark: #1a1a2e;
+  --zuula-text: #2d2d2d;
+}
+
+/* --- Header / Navbar --- */
+.header {
+  background-color: #fff !important;
+  border-bottom: 3px solid var(--zuula-primary) !important;
+}
+.header .nav-link {
+  color: var(--zuula-dark) !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.header .nav-link:hover,
+.header .nav-link.active {
+  color: var(--zuula-primary) !important;
+}
+.logo span {
+  color: var(--zuula-primary) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.5px;
+}
+
+/* --- Buttons --- */
+.btn-zuula-primary {
+  background: var(--zuula-primary) !important;
+  border-color: var(--zuula-primary) !important;
+  color: #fff !important;
+  transition: all 0.3s ease;
+}
+.btn-zuula-primary:hover {
+  background: #7a0c05 !important;
+  border-color: #7a0c05 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(155, 15, 6, 0.35);
+}
+.btn-zuula-nav {
+  background: var(--zuula-accent) !important;
+  color: var(--zuula-dark) !important;
+  border: 1px solid #d4cebb !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease;
+  font-size: 13px !important;
+}
+.btn-zuula-nav:hover, .btn-zuula-nav.active {
+  background: var(--zuula-secondary) !important;
+  color: #fff !important;
+  border-color: var(--zuula-secondary) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(19, 78, 142, 0.3);
+}
+.btn-primary {
+  background: var(--zuula-secondary) !important;
+  border-color: var(--zuula-secondary) !important;
+}
+.btn-primary:hover {
+  background: #0f3d6e !important;
+  border-color: #0f3d6e !important;
+  transform: translateY(-1px);
+}
+.btn-outline-primary {
+  color: var(--zuula-secondary) !important;
+  border-color: var(--zuula-secondary) !important;
+}
+.btn-outline-primary:hover {
+  background: var(--zuula-secondary) !important;
+  color: #fff !important;
+}
+
+/* --- Cards --- */
+.card {
+  border: none !important;
+  border-radius: 16px !important;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12) !important;
+}
+
+/* --- Footer --- */
+#footer {
+  background: #1565C0 !important;
+  color: #fff !important;
+  padding: 20px 0 !important;
+}
+#footer .copyright {
+  color: rgba(255,255,255,0.85) !important;
+}
+#footer .credits {
+  color: rgba(255,255,255,0.7) !important;
+}
+#footer .credits strong {
+  color: #ECE7D1 !important;
+}
+
+/* --- Page BG --- */
+body {
+  background-color: #f5f3ee !important;
+}
+
+/* --- Sidebar (Admin) --- */
+.sidebar-nav .nav-link.active {
+  background: var(--zuula-primary) !important;
+  color: #fff !important;
+}
+.sidebar-nav .nav-link:hover {
+  color: var(--zuula-primary) !important;
+}
+
+/* --- Accordion (FAQs) --- */
+.accordion-button:not(.collapsed) {
+  background-color: var(--zuula-accent) !important;
+  color: var(--zuula-dark) !important;
+  box-shadow: none !important;
+}
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.15rem rgba(155, 15, 6, 0.25) !important;
+}
+
+/* --- Back to Top --- */
+.back-to-top {
+  background: var(--zuula-primary) !important;
+}
+.back-to-top:hover {
+  background: #7a0c05 !important;
+}
+
+/* --- Badge colors --- */
+.badge.bg-danger {
+  background: var(--zuula-primary) !important;
+}
+.badge.bg-success {
+  background: #198754 !important;
+}
+
+/* --- Micro-Animations --- */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.card {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* --- Selection Highlight --- */
+::selection {
+  background: var(--zuula-primary);
+  color: #fff;
+}
+
+/* --- Scrollbar (Webkit) --- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--zuula-accent);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--zuula-secondary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--zuula-primary);
+}

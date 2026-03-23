@@ -1,0 +1,20 @@
+2026-03-23 20:56:09 - Login Attempt: Username: admin
+Received Password HEX: 61646d696e313233
+Stored Hash HEX: 243279243130246c75394c7a396436316e73525271356158474f726d75696b36747a684d69662e414951546d78676a344c544866334d396879477457
+Password Verify Failed for input: admin123
+Status: Incorrect Password
+2026-03-23 20:56:09 - Login Attempt: Username: admin
+Received Password HEX: 61646d696e313233
+Stored Hash HEX: 243279243130246c75394c7a396436316e73525271356158474f726d75696b36747a684d69662e414951546d78676a344c544866334d396879477457
+Password Verify Failed for input: admin123
+Status: Incorrect Password
+2026-03-23 20:58:09 - Login Attempt: Username: 2023-B293-11234
+Received Password HEX: 61646d696e313233
+Stored Hash HEX: 5c2e414951546d78676a344c544866334d396879477457
+Password Verify Failed for input: admin123
+Status: Incorrect Password
+2026-03-23 20:58:14 - Login Attempt: Username: 2023-B293-11234
+Received Password HEX: 61646d696e313233
+Stored Hash HEX: 5c2e414951546d78676a344c544866334d396879477457
+Password Verify Failed for input: admin123
+Status: Incorrect Password
